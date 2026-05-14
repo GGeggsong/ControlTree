@@ -1,0 +1,55 @@
+# Control Tree（中控樹）· Config
+#
+# 方法論正式名稱：中文「中控樹」／英文「Control Tree」。
+# 以下 `project:` 等欄位為「使用者專案」範例，非本 INIT 套件本身名稱。
+#
+# 此檔由 INIT 訪談結果產生，作為「下次 AI 不必重訪談」的單一真相。
+# 任何 AI 在建樹後都應讀這支 yml，先理解專案參數再動手。
+#
+# 注意：本檔內容僅供 AI 與工具讀取；中控樹的 md 內若有衝突，以 md 為準。
+
+schema_version: 1
+
+project:
+  name: EasyLighting              # Q1
+  name_lower: easylighting
+  description: "BLE 控燈跨端產品（韌體 + iOS + Android）"
+
+paths:
+  local_root: "D:/Projects/EasyLighting/EasyLighting_ControlTree"   # Q2
+
+sides:                              # Q3
+  - id: firmware
+    folder: "05_FIRMWARE_SIDE"
+    version: "FW-0.0.0"
+    notes: "Need Verify"
+  - id: ios
+    folder: "06_IOS_SIDE"
+    version: "IOS-1.0.0"
+    notes: ""
+  - id: android
+    folder: "07_ANDROID_SIDE"
+    version: "ANDROID-0.0.0"
+    notes: "Need Verify"
+
+interface:                          # Q4（多分支共用規格；無則見下行註解）
+  types:
+    - BLE                           # 工程例；非工程可為 none，或 floor-plan、financing-gate 等短標籤
+  contract_version: "v0.1.0"
+
+storage:                            # Q5
+  backend: local                    # local | git | cloud-drive
+  detail: ""                        # repo URL / 雲端服務名稱 / 本地多機資訊
+  authority: local                  # 多後端並存時的權威端
+
+versions:                           # Q6：使用者未提供時由 AI 填 0.0.0 / v0.0.0 並標 Need Verify
+  product_spec_version: "v0.1.0"
+  sync_rev: "2026.05.14-001"
+
+ai:
+  last_updated_by: "Cursor (Claude Opus 4.7)"
+  last_updated_at: "2026-05-14"
+  history:
+    - by: "Cursor (Claude Opus 4.7)"
+      at: "2026-05-14"
+      action: "init"
