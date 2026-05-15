@@ -26,7 +26,7 @@
 
 若你習慣**一次跑完、不要反覆問**，開場跟 AI 說即可；建樹完成後會寫進中控樹的 `control-tree.config.yml` → `user_preferences`，之後換 AI 也會讀到。日常協作也可用 `reduce_interruptions` 減少冗餘確認（**不影響**合約與 `Need Verify` 等硬性規則）。細節見 `BOOTSTRAP/01_INTERVIEW.md` 與 `BOOTSTRAP/05_FILL_RULES.md` R11。
 
-1. 專案名稱（英數短代號，例 `EasyLighting`）
+1. 專案名稱（英數短代號，例 `Demo`）
 2. 中控樹要放在哪個本地路徑
 3. **有幾條要分開追的線**（產品／平台／交付物皆可；可用中文說，AI 會幫你對成小寫代號後再確認）
 4. **多條分支有沒有共用規格**（甲：BLE／Wi‑Fi／REST…；乙：平面圖、合約預算…；都沒有就說沒有）
