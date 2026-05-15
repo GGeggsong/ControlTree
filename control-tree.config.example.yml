@@ -53,3 +53,10 @@ ai:
     - by: "Cursor (Claude Opus 4.7)"
       at: "2026-05-14"
       action: "init"
+
+# 使用者習慣（給下一支 AI 讀；可手改；訪談收尾時應寫入／更新）
+user_preferences:
+  interview_pace: step_by_step   # step_by_step = 逐題問 | batch_form = 一次六題表單自填
+  collaboration:
+    reduce_interruptions: false    # true = 少問冗餘確認句；仍遵守 Need Verify／合約保護等硬性規則（見 BOOTSTRAP/05_FILL_RULES.md R11）
+  notes: ""                      # 自由文字，例：「韌體議題請帶 Git SHA」

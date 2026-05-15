@@ -27,6 +27,7 @@
 ### 動手前（讀順序）
 
 ```
+0. （若存在）<root>/control-tree.config.yml         → 讀 `user_preferences`（訪談節奏、少打斷、notes）；不得凌駕 SYNC_RULES／合約與驗證相關硬性規定
 1. <root>/README.md                                 → 知道整棵樹用法
 2. 00_PROJECT_CONTROL/MASTER_STATUS.md              → 現況、版本、上次更新者
 3. 00_PROJECT_CONTROL/SYNC_RULES.md                 → 規則

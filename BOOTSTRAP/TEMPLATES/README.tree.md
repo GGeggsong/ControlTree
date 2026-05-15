@@ -1,6 +1,6 @@
 # {{PROJECT_NAME}}_ControlTree — Control Tree（中控樹）
 
-> 本資料夾由 [Control Tree（中控樹）](https://github.com/) INIT v1.2.0 建立。
+> 本資料夾由 [Control Tree（中控樹）](https://github.com/GGeggsong/ControlTree) INIT v1.2.0 建立。
 
 ---
 

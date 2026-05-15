@@ -151,7 +151,7 @@
 - `SYNC_HISTORY.md` 寫第一筆紀錄：`{{SYNC_REV}}：Control Tree（中控樹）初始化（by {{AI_AGENT}}）`。
 - `DECISION_LOG.md` 寫第一筆決策：採用 Control Tree（中控樹）INIT v1.2.0 結構、儲存後端為 `{{STORAGE_BACKEND}}`。
 - `CURRENT_TASKS.md` 預埋一條：**填寫 `01_INTERFACE_CONTRACT/INTERFACE_SPEC.md` 與各端 `STATUS.md`**。
-- `control-tree.config.yml` 依訪談寫滿（見 `control-tree.config.example.yml`）。
+- `control-tree.config.yml` 依訪談寫滿（見 `control-tree.config.example.yml`），**必含** `user_preferences`（見 `01_INTERVIEW.md`）。
 
 ## 6. 完成判定
 

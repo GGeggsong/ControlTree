@@ -267,7 +267,7 @@ README → MASTER_STATUS → SYNC_RULES → STORAGE_AND_SYNC
 任何使用者只需要做一件事 — 把這段話貼給任何一個 AI：
 
 ```
-請依 https://raw.githubusercontent.com/<you>/control-tree/main/INIT.md
+請依 https://raw.githubusercontent.com/GGeggsong/ControlTree/main/INIT.md
 執行 Control Tree（中控樹）建樹流程。
 我的本地專案根目錄是 <C:\path\to\project>。
 我想使用 <local | git | cloud-drive> 作為儲存後端。
@@ -314,7 +314,7 @@ README → MASTER_STATUS → SYNC_RULES → STORAGE_AND_SYNC
 - **不**強制 commit message 規範（但 `git` 後端的 SOP 有建議）
 - **不**內建多人同時編輯的 lock 機制（雲端硬碟用內建衝突偵測就夠）
 
-AI 在建樹時也**被明確要求不要塞**這些東西進來（見 `BOOTSTRAP/05_FILL_RULES.md` R12）。
+AI 在建樹時也**被明確要求不要塞**這些東西進來（見 `BOOTSTRAP/05_FILL_RULES.md` R13）。
 
 ### 「以後變團隊用」怎麼辦？
 
@@ -352,7 +352,7 @@ AI 在建樹時也**被明確要求不要塞**這些東西進來（見 `BOOTSTRA
 
 ## 10. 開始用
 
-1. 到 GitHub 找 [Control Tree（中控樹）](https://github.com/) repo。
+1. 到 GitHub 開 [Control Tree（中控樹）](https://github.com/GGeggsong/ControlTree) 倉庫（clone：`https://github.com/GGeggsong/ControlTree.git`）。
 2. 把 `INIT.md` 的 raw URL 給任何一個你信任的 AI。
 3. 5 ~ 10 分鐘後，你有一棵能跨平台、跨 AI、跨端的中控樹。
 4. 把你的 SOP、腳位圖、流程圖、規範丟進 `_SHARED/`，剩下的 AI 會自己找到。

@@ -11,7 +11,7 @@
 你正在執行 **Control Tree（中控樹）建樹流程**。請依下列規則行動：
 
 1. **不要直接動使用者既有的程式碼或專案檔案**；你只在「中控樹根目錄」內新增資料夾與 md。
-2. **不要跳過訪談**。即使使用者已經給了部分參數，也要把 6 題（見 `BOOTSTRAP/01_INTERVIEW.md`）**逐題**走完，缺漏的補問。
+2. **不要跳過訪談**。即使使用者已經給了部分參數，也要把 6 題（見 `BOOTSTRAP/01_INTERVIEW.md`）**涵蓋完畢**；缺漏的補問。訪談節奏預設逐題，若使用者開場要求、或既有 `control-tree.config.yml` 內 `user_preferences.interview_pace` 為 `batch_form`，則依 `01_INTERVIEW.md` 改為表單一次填寫模式。
 3. **依序讀以下五份檔案**後再開始動手：
    1. `BOOTSTRAP/05_FILL_RULES.md` — 你必須遵守的硬性規則（含「Need Verify」「不可擅改 contract」等）
    2. `BOOTSTRAP/01_INTERVIEW.md` — 訪談腳本
@@ -43,13 +43,13 @@
 把這段話貼給任一 AI（自行替換 `<...>`）：
 
 ```
-請依 https://raw.githubusercontent.com/<owner>/<repo>/main/INIT.md
+請依 https://raw.githubusercontent.com/GGeggsong/ControlTree/main/INIT.md
 （或本地路徑 <path>）執行 Control Tree（中控樹）建樹流程。
 我的本地專案根目錄是 <C:\path\to\project>。
 我想使用 <local | git | cloud-drive> 作為儲存後端。
 ```
 
-AI 會接手完成所有步驟。使用者只需要在 AI **逐題**問 6 題訪談時依序回答即可。
+AI 會接手完成所有步驟。使用者依訪談節奏回答：**預設** AI **逐題**問 6 題；若你開場說明要**一次拿表單填完**（或之後在 `control-tree.config.yml` 的 `user_preferences` 已設好），則依該設定進行（見 `BOOTSTRAP/01_INTERVIEW.md`）。
 
 ---
 
@@ -57,7 +57,7 @@ AI 會接手完成所有步驟。使用者只需要在 AI **逐題**問 6 題訪
 
 ```
 STEP 1  讀 BOOTSTRAP/05_FILL_RULES.md       → 內化硬性規則
-STEP 2  讀 BOOTSTRAP/01_INTERVIEW.md        → 對使用者做 6 題訪談
+STEP 2  讀 BOOTSTRAP/01_INTERVIEW.md        → 對使用者做 6 題訪談（若已有 yml，先讀 `user_preferences` 再開場）
 STEP 3  讀 BOOTSTRAP/02_BUILD_TREE.md       → 依答案決定資料夾與檔案
 STEP 4  讀 BOOTSTRAP/03_STORAGE_PRESETS.md  → 取對應後端的 STORAGE_AND_SYNC 內容
 STEP 5  從 BOOTSTRAP/TEMPLATES/ 拷貝模板    → 替換占位符後寫入中控樹
@@ -103,7 +103,7 @@ STEP 8  產出摘要回報（見 §4）
 | `BOOTSTRAP/05_FILL_RULES.md` | AI 硬性規則（先讀；含共用文件單一位置原則） |
 | `BOOTSTRAP/TEMPLATES/` | 中控樹所有檔案的模板 |
 | `BOOTSTRAP/TEMPLATES/_SHARED/README.md` | **共用文件中心**索引模板（SOP／腳位／流程圖／規範統一放這裡） |
-| `control-tree.config.example.yml` | 訪談答案的範例設定檔 |
+| `control-tree.config.example.yml` | 訪談答案的範例設定檔（含 `user_preferences` 習慣欄位） |
 | `README.md` | 給人類讀的五分鐘上手 |
 | `ARTICLE.md` | 設計理念長文 |
 
